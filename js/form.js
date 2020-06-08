@@ -83,7 +83,6 @@ function setDOB() {
     }
   }
   dob.value = guessDateParts.join('-')
-  name.value = guessDateParts.join('-')
 }
 
 
