@@ -81,14 +81,14 @@
           <div class="form-group">
             <label>
               Age
-              <input type="number" name="age" id="age" min="0" onclick="setDOB()" />  <!--step="0.1"-->
+              <input type="number" name="age" id="age" min="0" oninput="setDOB()" />  <!--step="0.1"-->
             </label>
           </div>
 
         <div class="form-group">
           <label>
             Date of Birth
-            <input type="date" name="dob" id="dob" onclick="setAge()" />
+            <input type="date" name="dob" id="dob" oninput="setAge()" />
           </label>
         </div>
 
