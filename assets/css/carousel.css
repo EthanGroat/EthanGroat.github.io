@@ -3,8 +3,7 @@ section {
   padding: 50px 0; }
 
 .container {
-  max-width: max-content;
-  margin: 0 auto;
+  margin: 0 0;
   padding: 0 20px; }
 
 .carousel {
@@ -71,13 +70,14 @@ section {
     display: flex;
     margin: 0; }
   .carousel__slide div {
+    /*  @include aspect-ratio(3, 2);  */
     position: relative;
     width: 100%; }
     .carousel__slide div:before {
       display: block;
       content: "";
       width: 100%;
-      padding-top: 66.6666666667%; }
+      padding-top: 56.25%; }
     .carousel__slide div > img {
       position: absolute;
       top: 0;
@@ -94,14 +94,13 @@ section {
     align-self: flex-end;
     padding: 20px 20px 0 20px;
     flex: 0 0 auto;
+    position: absolute;
     width: 25%;
     min-width: 150px;
-    color: #fff; }
-  .carousel__slide figcaption span {
     color: #aaa; }
   .carousel__slide .credit {
     margin-top: 1rem;
-    color: rgba(0, 0, 0, 0.5);
+    color: #aaa;
     display: block; }
   .carousel__slide.scrollable {
     overflow-y: scroll; }

@@ -27,8 +27,7 @@ section {
 }
 
 .container {
-    max-width: max-content;
-    margin: 0 auto;
+    margin: 0 0;
     padding: 0 20px;
 }
 
@@ -93,7 +92,8 @@ section {
     }
     
     div {
-        @include aspect-ratio(3, 2);
+      /*  @include aspect-ratio(3, 2);  */
+        @include aspect-ratio(16, 9);
         width: 100%;
     }
     
@@ -107,18 +107,15 @@ section {
         align-self: flex-end;
         padding: 20px 20px 0 20px;
         flex: 0 0 auto;
+        position: absolute;
         width: 25%;
         min-width: 150px;
-        color: #fff;
-    }
-
-    figcaption span {
         color: #aaa;
     }
-    
+
     .credit {
         margin-top: 1rem;
-        color: rgba(0, 0, 0, 0.5);
+        color: #aaa;
         display: block;        
     }
     
