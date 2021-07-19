@@ -3,7 +3,7 @@ section {
   padding: 50px 0; }
 
 .container {
-  max-width: 1044px;
+  max-width: max-content;
   margin: 0 auto;
   padding: 0 20px; }
 
@@ -95,7 +95,10 @@ section {
     padding: 20px 20px 0 20px;
     flex: 0 0 auto;
     width: 25%;
-    min-width: 150px; }
+    min-width: 150px;
+    color: #fff; }
+  .carousel__slide figcaption span {
+    color: #aaa; }
   .carousel__slide .credit {
     margin-top: 1rem;
     color: rgba(0, 0, 0, 0.5);
@@ -113,11 +116,13 @@ section {
     margin-top: 20px; }
   .carousel__thumbnails li {
     flex: 1 1 auto;
-    max-width: calc((100% / 6) - 20px);
-    margin: 0 10px;
+    max-width: calc((100% / 5) - 10px);
+    margin: 0 5px;
+    padding-left: 0;
     transition: all 300ms ease-in-out; }
   .carousel__thumbnails label {
     display: block;
+    margin: 0;
     position: relative; }
     .carousel__thumbnails label:before {
       display: block;
